@@ -6,3 +6,6 @@ nosync
 *.virtual_documents*
 *.key
 common/upload.sh
+.DS_Store
+.DS_Store?
+
