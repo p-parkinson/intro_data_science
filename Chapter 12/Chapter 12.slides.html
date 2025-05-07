@@ -7892,11 +7892,11 @@ Parameters: (np.float64(6.9506090453957174), np.float64(-27.675411690662322), np
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="4.-Hypothesis-testing:-Is-there-a-climate-trend?">4. Hypothesis testing: Is there a climate trend?<a class="anchor-link" href="#4.-Hypothesis-testing:-Is-there-a-climate-trend?">¶</a></h2><p>Having look at the data, trends and distribution, we can define a hypothesis test. In this case, we can ask - is there a trend in rainfall over time?</p>
-<p>As a one-sided test, this would become - is rainfall increasing over time?</p>
+<p>As a one-sided test, this would become - is rainfall increasing over time? As a two-sided - is rainfall changing with time?</p>
 <p>We express this as a <em>hypothesis test</em>:</p>
 <ul>
-<li><strong>Null Hypothesis</strong>: Rainfall does not vary with time</li>
-<li><strong>Alternative Hypothesis</strong>: Rainfall increases with time</li>
+<li><strong>Null Hypothesis</strong>: Rainfall does not change with time</li>
+<li><strong>Alternative Hypothesis</strong>: Rainfall does with time</li>
 </ul>
 <p>To do this test, we need to create a model, fit parameters, measure their confidence intervals, and use a statistical test.</p>
 </div>
@@ -7943,8 +7943,8 @@ Parameters: (np.float64(6.9506090453957174), np.float64(-27.675411690662322), np
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="4.2-Calculate-confidence-intervals">4.2 Calculate confidence intervals<a class="anchor-link" href="#4.2-Calculate-confidence-intervals">¶</a></h3><p>Confidence intervals on the fit parameters can be calculated using the mean-squared error between the model and the data.</p>
 <p>We first calculate the residuals between the model and the data. We can calculate the standard error from this.</p>
-<p>The t-test is a metric that allows us to calculate the confidence bands. We use the command ppf - percentage point function - which provides the confidence interval for the 0.975 point with n-p-1 degrees of freedom.</p>
-<p>This value can then be multiplied by the standard error to scale it.</p>
+<p>The t-test is a metric that allows us to calculate the confidence bands. We use the command ppf - percentage point function - which provides the confidence interval for the 0.975 point with n-p-1 degrees of freedom (we use this to get a 2-sided confidence bound).</p>
+<p>This value can then be multiplied by the standard error to scale it to our problem, providing a confidence level.</p>
 </div>
 </div>
 </div>
@@ -8030,6 +8030,7 @@ Parameters: (np.float64(6.9506090453957174), np.float64(-27.675411690662322), np
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_scroll" data-mime-type="text/markdown">
 <h3 id="4.4-Hypothesis-test">4.4 Hypothesis test<a class="anchor-link" href="#4.4-Hypothesis-test">¶</a></h3><p>We can extract the slope value, calculate the standard error, create a t-statistic metric with a degrees of freedom (n-2).</p>
+<p>Note that we use the absolute value of the t-test statistics - this is because it is a two-sided test (looking for change, not sign).</p>
 </div>
 </div>
 </div>
@@ -8348,7 +8349,7 @@ Estimated 99th percentile (1-in-100 month event): 246.88 mm
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let's forecast for the next 5 years (2023-2027)</span>
