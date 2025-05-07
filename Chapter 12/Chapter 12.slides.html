@@ -7727,7 +7727,7 @@ Name: Rainfall, dtype: float64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_scroll" data-mime-type="text/markdown">
-<h3 id="2.4-Seasonal-patterns">2.4 Seasonal patterns<a class="anchor-link" href="#2.4-Seasonal-patterns">¶</a></h3><p>We expect a 12-month periodicity in the data, and can look at this by grouping by month namme.</p>
+<h3 id="2.4-Seasonal-patterns">2.4 Seasonal patterns<a class="anchor-link" href="#2.4-Seasonal-patterns">¶</a></h3><p>We expect a 12-month periodicity in the data, and can look at this by grouping by month name. This is important to identify, as it will tell us how we can look at longer term trends -- do we need to average over seasons? Over years?</p>
 </div>
 </div>
 </div>
@@ -7778,7 +7778,7 @@ Name: Rainfall, dtype: float64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_scroll" data-mime-type="text/markdown">
-<h2 id="3.-Probability-Distribution-and-Parameter-Estimation">3. Probability Distribution and Parameter Estimation<a class="anchor-link" href="#3.-Probability-Distribution-and-Parameter-Estimation">¶</a></h2><p>We need to decide what kind of distribution best explains our data. This will allow us  We can consider normal, gamma, log-normal, Poissonian, uniform etc.</p>
+<h2 id="3.-Probability-Distribution-and-Parameter-Estimation">3. Probability Distribution and Parameter Estimation<a class="anchor-link" href="#3.-Probability-Distribution-and-Parameter-Estimation">¶</a></h2><p>We need to decide what kind of distribution best explains our data. This will allow us to understand the nature of the process, and to later assess for outliers and extreme events. We can consider normal, gamma, log-normal, Poissonian, uniform etc.</p>
 <p>Which might work well?</p>
 <ul>
 <li><strong>Normal Distribution</strong>: Assumes data is symmetrically distributed around the mean. Good for datasets with a bell-shaped curve, but bad if the data is skewed or has outliers.</li>
@@ -8279,8 +8279,18 @@ The Gamma distribution is a good fit (fail to reject H0)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_scroll" data-mime-type="text/markdown">
-<h2 id="6.-Prediction-Intervals">6. Prediction Intervals<a class="anchor-link" href="#6.-Prediction-Intervals">¶</a></h2><p>We can try and use the model we've chosen to generate values for what might be expected to be an "outlier" event - in other words, a 1 in 20 or 1 in 100 month event. This kind of calculation is extremely useful for understanding what to prepare for as an unusual but predictable event.</p>
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="6.-Prediction-Intervals">6. Prediction Intervals<a class="anchor-link" href="#6.-Prediction-Intervals">¶</a></h2><p>We can try and use the model we've chosen to generate values for what might be expected to be an "outlier" event - in other words, a 1 in 20 or 1 in 100 month event. This kind of calculation is extremely useful for understanding what to prepare for as an unusual but predictable even.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="6.1-Predicting-extreme-events">6.1 Predicting extreme events<a class="anchor-link" href="#6.1-Predicting-extreme-events">¶</a></h3>
 </div>
 </div>
