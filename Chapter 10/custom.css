@@ -1,9 +1,6 @@
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,600,600i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i" rel="stylesheet">
-
-
-<style>
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i");
 
 .container {
     max-width:1000px !important;
@@ -188,5 +185,3 @@ font-family: 'Inconsolata', monospace;
 .CodeMirror{
 font-family: "Inconsolata", monospace;
 }
-
-</style>

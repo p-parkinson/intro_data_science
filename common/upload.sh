@@ -17,11 +17,4 @@ do
 
     #rsync -avz --exclude-from=common/exclude-list.txt --delete Chapter\ $i hulkproxy:public_html/PHYS10792/.
     rsync -avz --exclude-from=common/exclude-list.txt --delete Chapter\ $i blackwidowproxy:public_html/PHYS10792/.
-
-    rm Chapter\ $i.zip
-    zip -r Chapter\ $i.zip Chapter\ $i -x */.\* \*nosync\* \*Instructor\*
-
 done
-
-rm PHYS10792.zip
-zip -r PHYS10792.zip Chapter\ * -x */.\* \*nosync\*
