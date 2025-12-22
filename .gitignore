@@ -10,4 +10,5 @@ common/upload.sh
 .DS_Store?
 .venv/
 .github/*
-dev_scripts/*
+dev_scripts
+archive
