@@ -12,3 +12,5 @@ common/upload.sh
 .github/*
 dev_scripts
 archive
+*.DS_Store
+nosync
